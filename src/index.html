@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" id="test">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<script>
+	//手机rem适配
+	(function(t) {
+		var doc = t.documentElement;
+		var curDeviceWidth = doc.clientWidth || window.innerWidth;
+		doc.style.fontSize = curDeviceWidth * (50 / 540) + 'px';
+	})(document)
+
+	</script>
+	<title>测试</title>
+	<link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+	<div id="root"></div>
+	<script src="index.js"></script>
+</body>
+
+</html>
